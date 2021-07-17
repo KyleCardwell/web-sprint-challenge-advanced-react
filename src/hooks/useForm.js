@@ -11,8 +11,6 @@ export const useForm = (initialValue) => {
         setForm({ ...form, [e.target.name]: e.target.value });
       };
 
-
-
     return [ form, handleChanges ]
 
 }

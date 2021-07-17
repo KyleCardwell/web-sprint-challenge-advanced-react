@@ -116,8 +116,26 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 
 1. What are the main differences between a stateful and a functional component?
 
+    stateful components - use a render method to return
+                        - props passed through this.props (because it's a class)
+                        - needs lifecycle methods
+                        - needs constructor and super() to handle state
+    
+    functional components - just need a return
+                          - props passed as an argument
+                          - uses hooks to deal with state and lifecycle
+
 2. When does a componentWillMount function be called? What about a componentWillUpdate?
+
+    These are called right before the component is mounted (before rendor() ), or right before th component is updated
+      - both are now considered unsafe
 
 3. Define stateful logic.
 
-4. What are the three step of creating a successful test? What is done in each phase?
+    any logic in a component that uses or deals with state data
+
+4. What are the three steps of creating a successful test? What is done in each phase?
+
+    Arrange - use render() to render a react component
+    Act - run some code or trigger some events
+    Assert - check that what's expected to happen actually happens
